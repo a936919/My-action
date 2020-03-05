@@ -47,8 +47,8 @@ jobs:
     - name: Download and Load custom configuration
       run: |
         cd openwrt
-        curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/x86_64/.config >.config
-        bash <(curl -fsSL https://raw.githubusercontent.com/1orz/My-action/master/openwrt/x86_64/diy.sh)
+        curl -fsSL https://raw.githubusercontent.com/a936919/My-action/master/openwrt/x86_64/.config >.config
+        bash <(curl -fsSL https://raw.githubusercontent.com/a936919/My-action/master/openwrt/x86_64/diy.sh)
         ./scripts/feeds install -a
         make defconfig
 
